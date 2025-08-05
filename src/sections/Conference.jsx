@@ -7,7 +7,7 @@ const Conference = () => {
           <div className="service-card">
             <div 
               className="card-image" 
-              style={{ backgroundImage: 'url(/conference.jpg)' }}
+              style={{ backgroundImage: 'url(/barj3.jpg)' }}
             ></div>
             <div className="card-content">
               <h3>Conference Rooms</h3>
@@ -20,7 +20,7 @@ const Conference = () => {
           <div className="service-card">
             <div 
               className="card-image" 
-              style={{ backgroundImage: 'url(/events.jpg)' }}
+              style={{ backgroundImage: 'url(/bar3.jpg)' }}
             ></div>
             <div className="card-content">
               <h3>Event Spaces</h3>

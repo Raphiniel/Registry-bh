@@ -1,0 +1,165 @@
+/* swimming.css */
+
+/* Swimming Section Styles */
+.swimming-section {
+  padding: 80px 20px;
+  background-color: var(--light-green);
+}
+
+/* Wellness Grid Layout */
+.wellness-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Wellness Card Styles */
+.wellness-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid var(--dark-green);
+}
+
+.wellness-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Wellness Image Section */
+.wellness-image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.wellness-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(94, 75, 42, 0.1), rgba(94, 75, 42, 0.05));
+}
+
+/* Wellness Content Section */
+.wellness-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wellness-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--brown);
+  margin-bottom: 5px;
+}
+
+.wellness-hours {
+  color: var(--dark-green);
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.wellness-description {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Wellness Features List */
+.wellness-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.wellness-features li {
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.feature-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  color: var(--dark-green);
+}
+
+/* Booking Button */
+.booking-button {
+  align-self: flex-start;
+  background-color: var(--brown);
+  color: var(--cream);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.booking-button:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .wellness-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wellness-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .wellness-image {
+    height: 300px;
+  }
+  
+  .wellness-content {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swimming-section {
+    padding: 60px 15px;
+  }
+  
+  .wellness-content {
+    padding: 20px;
+  }
+  
+  .wellness-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .booking-button {
+    width: 100%;
+    text-align: center;
+  }
+}

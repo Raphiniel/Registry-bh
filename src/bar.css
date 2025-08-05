@@ -1,0 +1,162 @@
+/* bar.css */
+
+/* Bar Section Styles */
+.bar-section {
+  padding: 80px 20px;
+  background-color: var(--light-green);
+}
+
+/* Bar Grid Layout */
+.bar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bar Card Styles */
+.bar-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.bar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Bar Image Section */
+.bar-image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bar-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(94, 75, 42, 0.1), rgba(94, 75, 42, 0.05));
+}
+
+/* Bar Content Section */
+.bar-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bar-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--brown);
+  margin-bottom: 15px;
+}
+
+.bar-content p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Bar Highlights List */
+.bar-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.bar-highlights li {
+  position: relative;
+  padding-left: 25px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.bar-highlights li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--dark-green);
+  font-size: 1.2rem;
+}
+
+/* Reserve Button */
+.reserve-button {
+  align-self: flex-start;
+  background-color: var(--brown);
+  color: var(--cream);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.reserve-button:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .bar-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bar-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .bar-image {
+    height: 300px;
+  }
+  
+  .bar-content {
+    padding: 25px;
+  }
+  
+  .bar-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .bar-section {
+    padding: 60px 15px;
+  }
+  
+  .bar-content {
+    padding: 20px;
+  }
+  
+  .bar-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .reserve-button {
+    width: 100%;
+    text-align: center;
+  }
+}

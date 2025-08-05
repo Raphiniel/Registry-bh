@@ -1,10 +1,18 @@
-// Hero.jsx - Updated with more aesthetic design
+// Hero.jsx
 import { motion } from 'framer-motion';
 
 const Hero = ({ scrollToAccommodation }) => {
   return (
     <section className="hero-section">
-      <div className="hero-overlay"></div>
+      {/* Video Background */}
+      <div className="video-background">
+        <video autoPlay loop muted playsInline>
+          <source src="video\BAOBAB HOTEL (5).mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="video-overlay"></div>
+      </div>
+      
       <div className="hero-content">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +29,7 @@ const Hero = ({ scrollToAccommodation }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="hero-subtitle"
         >
-          Where African Elegance Meets Modern Luxury
+          
         </motion.p>
         
         <motion.button
@@ -31,7 +39,7 @@ const Hero = ({ scrollToAccommodation }) => {
           className="hero-button"
           onClick={scrollToAccommodation}
         >
-          Discover Our Oasis
+          Discover More
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
           </svg>

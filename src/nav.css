@@ -1,0 +1,50 @@
+/* Navbar Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.navbar.scrolled .logo-text {
+  color: var(--brown);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-image {
+    height: 32px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-container {
+    gap: 8px;
+  }
+  
+  .logo-image {
+    height: 28px;
+  }
+  
+  .logo-text {
+    font-size: 1.3rem;
+  }
+}

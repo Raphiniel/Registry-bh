@@ -1,35 +1,47 @@
+import '../bar.css'
 const Bar = () => {
+  const barServices = [
+    {
+      title: "Bar",
+      image: "images/barj3.jpg",
+      description: "Enjoy crafted cocktails and fine wines at our bar.",
+      highlights: [
+        
+      ]
+    },
+    {
+      title: "Bar Lounge Area",
+      image: "images/barlounge1.jpg",
+      description: "Unwind in our comfortable lounge with live music on weekends and a selection of premium spirits and cigars.",
+      highlights: [
+        
+      ]
+    }
+  ];
+
   return (
-    <section className="bar-section" style={{ backgroundColor: 'var(--light-green)' }}>
+    <section className="bar-section">
       <div className="section-container">
-        <h2 className="section-title">Sky Lounge</h2>
-        <div className="section-content">
-          <div className="service-card">
-            <div 
-              className="card-image" 
-              style={{ backgroundImage: 'url(/bar.jpg)' }}
-            ></div>
-            <div className="card-content">
-              <h3>Rooftop Bar</h3>
-              <p>
-                Enjoy crafted cocktails and fine wines at our panoramic rooftop bar 
-                with stunning sunset views over the baobab valley.
-              </p>
+        <h2 className="section-title">Bar</h2>
+        <div className="bar-grid">
+          {barServices.map((service, index) => (
+            <div key={index} className="bar-card">
+              <div 
+                className="bar-image" 
+                style={{ backgroundImage: `url(${service.image})` }}
+              ></div>
+              <div className="bar-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul className="bar-highlights">
+                  {service.highlights.map((highlight, i) => (
+                    <li key={i}>{highlight}</li>
+                  ))}
+                </ul>
+                {/* <button className="reserve-button">Reserve Table</button> */}
+              </div>
             </div>
-          </div>
-          <div className="service-card">
-            <div 
-              className="card-image" 
-              style={{ backgroundImage: 'url(/lounge.jpg)' }}
-            ></div>
-            <div className="card-content">
-              <h3>Lounge Area</h3>
-              <p>
-                Unwind in our comfortable lounge with live music on weekends 
-                and a selection of premium spirits and cigars.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
