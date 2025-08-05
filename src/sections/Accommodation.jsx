@@ -15,7 +15,7 @@ const Accommodation = () => {
     },
     {
       title: "",
-      image: "images/abed.jpg",
+      image: "images/bedroom2.jpg",
       description: "",
       features: [""]
     }
