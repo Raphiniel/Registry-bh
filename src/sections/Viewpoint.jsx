@@ -2,7 +2,7 @@ import '../viewpoint.css'
 const Viewpoint = () => {
   const viewpoints = [
     {
-      title: "View Point",
+      title: "",
       image: "images/viewp1.jpg",
       description: "",
       features: [
@@ -11,7 +11,7 @@ const Viewpoint = () => {
      
     },
     {
-      title: "View Point",
+      title: "",
       image: "images/viewp2.jpg",
       description: "Experience magical African sunsets from our viewpoint.",
       features: [
