@@ -23,7 +23,7 @@ const Food = () => {
   return (
     <section className="food-section">
       <div className="section-container">
-        <h2 className="section-title">Gourmet Dining</h2>
+        <h2 className="section-title">Dining Services</h2>
         <div className="dining-grid">
           {diningOptions.map((option, index) => (
             <div key={index} className="dining-card">

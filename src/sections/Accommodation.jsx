@@ -32,16 +32,7 @@ const Accommodation = () => {
                 className="room-image" 
                 style={{ backgroundImage: `url(${room.image})` }}
               ></div>
-              <div className="room-content">
-                <h3>{room.title}</h3>
-                <p>{room.description}</p>
-                <ul className="room-features">
-                  {/* {room.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))} */}
-                </ul>
-                {/* <button className="book-button">Book Now</button> */}
-              </div>
+             
             </div>
           ))}
         </div>

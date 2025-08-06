@@ -12,8 +12,7 @@ const Conference = () => {
             <div className="card-content">
               <h3>Conference Rooms</h3>
               <p>
-                Host your business events in our state-of-the-art meeting rooms 
-                equipped with modern technology and customizable layouts.
+                Host your business events in our meeting rooms.
               </p>
             </div>
           </div>
@@ -23,10 +22,10 @@ const Conference = () => {
               style={{ backgroundImage: 'url(/bar3.jpg)' }}
             ></div>
             <div className="card-content">
-              <h3>Event Spaces</h3>
+              <h3>Conference</h3>
               <p>
-                Celebrate special occasions in our beautiful event venues with 
-                professional planning services and gourmet catering.
+                Host conferences in our beautiful conference room with 
+                conference services and catering.
               </p>
             </div>
           </div>

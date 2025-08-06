@@ -27,7 +27,7 @@ const Navbar = ({
     { name: 'Dining', action: scrollToFood, id: 'dining' },
     { name: 'Pool', action: scrollToSwimming, id: 'pool' },
     { name: 'Events', action: scrollToConference, id: 'events' },
-    { name: 'Lounge', action: scrollToBar, id: 'lounge' },
+    { name: 'Bar', action: scrollToBar, id: 'lounge' },
     { name: 'Views', action: scrollToViewpoint, id: 'views' }
   ];
 
