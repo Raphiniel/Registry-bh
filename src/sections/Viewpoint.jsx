@@ -2,18 +2,18 @@ import '../viewpoint.css'
 const Viewpoint = () => {
   const viewpoints = [
     {
-      title: "Observation Deck",
+      title: "View Point",
       image: "images/viewp1.jpg",
-      description: "Visit our elevated observation deck for breathtaking 360-degree views of the surrounding landscape and wildlife.",
+      description: "",
       features: [
   
       ],
      
     },
     {
-      title: "Sunset Spot",
+      title: "View Point",
       image: "images/viewp2.jpg",
-      description: "Experience magical African sunsets from our specially-designed viewpoint with complimentary sundowner drinks.",
+      description: "Experience magical African sunsets from our viewpoint.",
       features: [
  
       ],
