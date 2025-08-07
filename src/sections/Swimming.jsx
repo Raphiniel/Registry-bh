@@ -2,8 +2,8 @@ import '../swimming.css'
 const Swimming = () => {
   const wellnessOptions = [
     {
-      title: "Pool Sitting Area",
-      image: "images/pool1.jpg",
+      title: "Swimming Pool",
+      image: "images/withdetail.jpg",
       description: "Relax in our stunning infinity pool overlooking the baobab forest with attentive poolside service and private cabanas.",
       features: [
      
@@ -12,7 +12,7 @@ const Swimming = () => {
     },
     {
       title: "Pool",
-      image: "images/pool2.jpg",
+      image: "images/oldpool.jpg",
       description: "We have 2 pools, one for adults and the other one for kids. Do not leave children unattended at the pool area.",
       features: [
        
