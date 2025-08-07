@@ -3,7 +3,7 @@ const Accommodation = () => {
   const rooms = [
     {
       title: "",
-      image: "images/bedroom1.jpg",
+      image: "images/newbed.jpg",
       description: " ",
       features: [""]
     },
@@ -13,12 +13,12 @@ const Accommodation = () => {
       description: "",
       features: [""]
     },
-    {
-      title: "",
-      image: "images/bedroom2.jpg",
-      description: "",
-      features: [""]
-    }
+    // {
+    //   title: "",
+    //   image: "images/newbed.jpg",
+    //   description: "",
+    //   features: [""]
+    // }
   ];
 
   return (
